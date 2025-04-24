@@ -44,7 +44,9 @@ LTESTATUS=$(mmcli -m "${MODEM_PATH}" | grep -c "connected")
 	sleep 5
             
     logger "network restart..."
-	/etc/init.d/network reload 
+    uci set network.wan.disabled=0  
+    uci commit network                
+    /etc/init.d/network reload    
  
  fi
 

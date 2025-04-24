@@ -1,4 +1,4 @@
-Modem and network restart service for connecting via proto Modemmanager to Openwrt. An alternative to Watchdog and the "10-report-down" script
+Modem and network restart service for connecting via proto Modemmanager to Openwrt. An alternative to Watchcat and the "10-report-down" script
 Dependence: comgt modemmanager luci-proto-modemmanager
 Disable script execution /usr/lib/ModemManager/connection.d/10-report-down
 Move script modem-watchdog   to "/usr/bin/modem-watchdog" и chmod +x/usr/bin/modem-watchdog

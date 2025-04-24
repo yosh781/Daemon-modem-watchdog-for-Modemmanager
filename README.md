@@ -1,2 +1,1 @@
-Служба перезапуска модема и сети для подключения через Proto Modemmanager к OpenWRT. Альтернатива сторожевому педера
--->
+Modem and network restart service for connecting via proto Modemmanager to Openwrt. An alternative to Watchdog and the "10-report-down" script

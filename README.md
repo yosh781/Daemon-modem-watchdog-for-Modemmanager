@@ -6,4 +6,4 @@ Disable script execution /usr/lib/ModemManager/connection.d/10-report-down.
 
 Move script "modem-watchdog"   to "/usr/bin/modem-watchdog" и chmod +x/usr/bin/modem-watchdog.
 
-Place the file "modem-watchdog(etcinit.d)"  in "/etc/init.d/modem-watchdog" rename to "modem-watchdog" and chmod +x /etc/init.d/modem-watchdog.
+Place the file "modem-watchdog(etcinit.d)"  in "/etc/init.d/modem-watchdog" , rename to "modem-watchdog" ,  chmod +x /etc/init.d/modem-watchdog.

@@ -28,11 +28,9 @@ while true; do
 MODEM_PATH=$(mmcli -L | awk '/Modem/ {print $1}' | head -1)
 
 if [ -z "$MODEM_PATH" ]; then
-    logger "mmcli doesn't see modem, trying to reset..."
-    uci set network.wan.disable_modem="0"  
-    uci commit network     
-    /etc/init.d/network restart
-    sleep 10
+    logger "mmcli doesn't see modem, trying to find modem..." 
+    /etc/init.d/dbus restart
+    sleep 15
     continue
 fi
 

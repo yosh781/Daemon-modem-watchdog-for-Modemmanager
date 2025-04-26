@@ -29,7 +29,7 @@ MODEM_PATH=$(mmcli -L | awk '/Modem/ {print $1}' | head -1)
 
 if [ -z "$MODEM_PATH" ]; then
     logger "mmcli doesn't see modem, trying to find modem..." 
-    /etc/init.d/dbus restart
+    /etc/init.d/ModemManager restart
     sleep 15
     continue
 fi

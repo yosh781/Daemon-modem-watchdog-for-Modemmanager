@@ -1,4 +1,9 @@
+ This service is needed in a scenario where the modem hangs up and there is no connection. This can be due to ISP reconnections, due to modem overheating, 
+due to modem firmware ....
+
+
 Modem and network restart daemon for connecting with proto Modemmanager,Openwrt. An alternative to Watchcat and standart script  "/usr/lib/ModemManager/connection.d/10-report-down"
+
 
 disable-  put "exit0" to begin  "/usr/lib/ModemManager/connection.d/10-report-down"
 

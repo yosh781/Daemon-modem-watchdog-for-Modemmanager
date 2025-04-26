@@ -9,3 +9,7 @@ chmod +x/usr/bin/modem-watchdog
 Place the file "modem-watchdog(etcinit.d)" in /etc/init.d/modem-watchdog , rename to "modem-watchdog" ,
 
 chmod +x /etc/init.d/modem-watchdog
+
+/etc/init.d/modem-watchdog enable
+
+/etc/init.d/modem-watchdog start

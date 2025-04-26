@@ -5,7 +5,7 @@ due to modem firmware ....
 Modem and network restart daemon for connecting with proto Modemmanager,Openwrt. An alternative to Watchcat and standart script  "/usr/lib/ModemManager/connection.d/10-report-down"
 
 
-disable-  put "exit0" to begin  "/usr/lib/ModemManager/connection.d/10-report-down"
+disable-  put it "exit0" at the beginning   "/usr/lib/ModemManager/connection.d/10-report-down"
 
 Move script "modem-watchdog" to /usr/bin/modem-watchdog
 

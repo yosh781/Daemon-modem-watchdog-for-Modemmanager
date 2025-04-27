@@ -33,7 +33,7 @@ while true; do
             reboot
         fi           
     fi
-    sleep 10 
+    sleep 15 
 done
 
 exit 0

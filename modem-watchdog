@@ -22,6 +22,7 @@ if [ "$AUTOCONNECT" != "1" ]; then
 fi
 
 while true; do
+    sleep 15
     MODEM_PATH=$(mmcli -L --timeout 5000 | awk '/Modem/ {print $1}' | head -1)
 
     if [ -z "$MODEM_PATH" ]; then

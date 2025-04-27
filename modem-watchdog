@@ -27,7 +27,7 @@ MODEM_PATH=$(mmcli -L --timeout 3000 | awk '/Modem/ {print $1}' | head -1)
 if [ -z "$MODEM_PATH" ]; then
     logger "mmcli doesn't see modem, trying to find modem..." 
     /etc/init.d/modemmanager restart
-    sleep 20
+    sleep 30
     continue
 fi
 

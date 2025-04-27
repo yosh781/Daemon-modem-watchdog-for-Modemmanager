@@ -22,7 +22,7 @@ if [ "$AUTOCONNECT" != "1" ]; then
 fi
 
 while true; do
-MODEM_PATH=$(mmcli -L --timeout 3000 | awk '/Modem/ {print $1}' | head -1)
+MODEM_PATH=$(mmcli -L --timeout 5000 | awk '/Modem/ {print $1}' | head -1)
 
 if [ -z "$MODEM_PATH" ]; then
     logger "mmcli doesn't see modem, trying to find modem..." 

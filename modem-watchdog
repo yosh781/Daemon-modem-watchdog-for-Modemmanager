@@ -29,6 +29,7 @@ while true; do
         logger "mmcli doesn't see modem, trying to find modem..." 
         if echo -e "AT+CFUN=1,1\r" > /dev/ttyUSB2 2>/dev/null; then
             logger "modem reboot"
+            sleep 30
         else
             logger "reboot router..."
             reboot
